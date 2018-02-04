@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11DA32CA20272DA600D95EC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DA32C920272DA600D95EC7 /* AppDelegate.swift */; };
+		11DA32CC20272DA600D95EC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DA32CB20272DA600D95EC7 /* ViewController.swift */; };
+		11DA32CF20272DA600D95EC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11DA32CD20272DA600D95EC7 /* Main.storyboard */; };
+		11DA32D120272DA600D95EC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11DA32D020272DA600D95EC7 /* Assets.xcassets */; };
+		11DA32D420272DA600D95EC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11DA32D220272DA600D95EC7 /* LaunchScreen.storyboard */; };
+		11DA32DF20272DA600D95EC7 /* GeoLocationTrackingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DA32DE20272DA600D95EC7 /* GeoLocationTrackingTests.swift */; };
+		11DA32EA20272DA600D95EC7 /* GeoLocationTrackingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DA32E920272DA600D95EC7 /* GeoLocationTrackingUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11DA32DB20272DA600D95EC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11DA32BE20272DA600D95EC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11DA32C520272DA600D95EC7;
+			remoteInfo = GeoLocationTracking;
+		};
+		11DA32E620272DA600D95EC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11DA32BE20272DA600D95EC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11DA32C520272DA600D95EC7;
+			remoteInfo = GeoLocationTracking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11DA32C620272DA600D95EC7 /* GeoLocationTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoLocationTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11DA32C920272DA600D95EC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		11DA32CB20272DA600D95EC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		11DA32CE20272DA600D95EC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		11DA32D020272DA600D95EC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11DA32D320272DA600D95EC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		11DA32D520272DA600D95EC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11DA32DA20272DA600D95EC7 /* GeoLocationTrackingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoLocationTrackingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11DA32DE20272DA600D95EC7 /* GeoLocationTrackingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoLocationTrackingTests.swift; sourceTree = "<group>"; };
+		11DA32E020272DA600D95EC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11DA32E520272DA600D95EC7 /* GeoLocationTrackingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoLocationTrackingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11DA32E920272DA600D95EC7 /* GeoLocationTrackingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoLocationTrackingUITests.swift; sourceTree = "<group>"; };
+		11DA32EB20272DA600D95EC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11DA32C320272DA600D95EC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11DA32D720272DA600D95EC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11DA32E220272DA600D95EC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11DA32BD20272DA600D95EC7 = {
+			isa = PBXGroup;
+			children = (
+				11DA32C820272DA600D95EC7 /* GeoLocationTracking */,
+				11DA32DD20272DA600D95EC7 /* GeoLocationTrackingTests */,
+				11DA32E820272DA600D95EC7 /* GeoLocationTrackingUITests */,
+				11DA32C720272DA600D95EC7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		11DA32C720272DA600D95EC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11DA32C620272DA600D95EC7 /* GeoLocationTracking.app */,
+				11DA32DA20272DA600D95EC7 /* GeoLocationTrackingTests.xctest */,
+				11DA32E520272DA600D95EC7 /* GeoLocationTrackingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11DA32C820272DA600D95EC7 /* GeoLocationTracking */ = {
+			isa = PBXGroup;
+			children = (
+				11DA32C920272DA600D95EC7 /* AppDelegate.swift */,
+				11DA32CB20272DA600D95EC7 /* ViewController.swift */,
+				11DA32CD20272DA600D95EC7 /* Main.storyboard */,
+				11DA32D020272DA600D95EC7 /* Assets.xcassets */,
+				11DA32D220272DA600D95EC7 /* LaunchScreen.storyboard */,
+				11DA32D520272DA600D95EC7 /* Info.plist */,
+			);
+			path = GeoLocationTracking;
+			sourceTree = "<group>";
+		};
+		11DA32DD20272DA600D95EC7 /* GeoLocationTrackingTests */ = {
+			isa = PBXGroup;
+			children = (
+				11DA32DE20272DA600D95EC7 /* GeoLocationTrackingTests.swift */,
+				11DA32E020272DA600D95EC7 /* Info.plist */,
+			);
+			path = GeoLocationTrackingTests;
+			sourceTree = "<group>";
+		};
+		11DA32E820272DA600D95EC7 /* GeoLocationTrackingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				11DA32E920272DA600D95EC7 /* GeoLocationTrackingUITests.swift */,
+				11DA32EB20272DA600D95EC7 /* Info.plist */,
+			);
+			path = GeoLocationTrackingUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11DA32C520272DA600D95EC7 /* GeoLocationTracking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11DA32EE20272DA600D95EC7 /* Build configuration list for PBXNativeTarget "GeoLocationTracking" */;
+			buildPhases = (
+				11DA32C220272DA600D95EC7 /* Sources */,
+				11DA32C320272DA600D95EC7 /* Frameworks */,
+				11DA32C420272DA600D95EC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeoLocationTracking;
+			productName = GeoLocationTracking;
+			productReference = 11DA32C620272DA600D95EC7 /* GeoLocationTracking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		11DA32D920272DA600D95EC7 /* GeoLocationTrackingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11DA32F120272DA600D95EC7 /* Build configuration list for PBXNativeTarget "GeoLocationTrackingTests" */;
+			buildPhases = (
+				11DA32D620272DA600D95EC7 /* Sources */,
+				11DA32D720272DA600D95EC7 /* Frameworks */,
+				11DA32D820272DA600D95EC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11DA32DC20272DA600D95EC7 /* PBXTargetDependency */,
+			);
+			name = GeoLocationTrackingTests;
+			productName = GeoLocationTrackingTests;
+			productReference = 11DA32DA20272DA600D95EC7 /* GeoLocationTrackingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		11DA32E420272DA600D95EC7 /* GeoLocationTrackingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11DA32F420272DA600D95EC7 /* Build configuration list for PBXNativeTarget "GeoLocationTrackingUITests" */;
+			buildPhases = (
+				11DA32E120272DA600D95EC7 /* Sources */,
+				11DA32E220272DA600D95EC7 /* Frameworks */,
+				11DA32E320272DA600D95EC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11DA32E720272DA600D95EC7 /* PBXTargetDependency */,
+			);
+			name = GeoLocationTrackingUITests;
+			productName = GeoLocationTrackingUITests;
+			productReference = 11DA32E520272DA600D95EC7 /* GeoLocationTrackingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11DA32BE20272DA600D95EC7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = takami228;
+				TargetAttributes = {
+					11DA32C520272DA600D95EC7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					11DA32D920272DA600D95EC7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 11DA32C520272DA600D95EC7;
+					};
+					11DA32E420272DA600D95EC7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 11DA32C520272DA600D95EC7;
+					};
+				};
+			};
+			buildConfigurationList = 11DA32C120272DA600D95EC7 /* Build configuration list for PBXProject "GeoLocationTracking" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11DA32BD20272DA600D95EC7;
+			productRefGroup = 11DA32C720272DA600D95EC7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11DA32C520272DA600D95EC7 /* GeoLocationTracking */,
+				11DA32D920272DA600D95EC7 /* GeoLocationTrackingTests */,
+				11DA32E420272DA600D95EC7 /* GeoLocationTrackingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11DA32C420272DA600D95EC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11DA32D420272DA600D95EC7 /* LaunchScreen.storyboard in Resources */,
+				11DA32D120272DA600D95EC7 /* Assets.xcassets in Resources */,
+				11DA32CF20272DA600D95EC7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11DA32D820272DA600D95EC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11DA32E320272DA600D95EC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11DA32C220272DA600D95EC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11DA32CC20272DA600D95EC7 /* ViewController.swift in Sources */,
+				11DA32CA20272DA600D95EC7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11DA32D620272DA600D95EC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11DA32DF20272DA600D95EC7 /* GeoLocationTrackingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11DA32E120272DA600D95EC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11DA32EA20272DA600D95EC7 /* GeoLocationTrackingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11DA32DC20272DA600D95EC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11DA32C520272DA600D95EC7 /* GeoLocationTracking */;
+			targetProxy = 11DA32DB20272DA600D95EC7 /* PBXContainerItemProxy */;
+		};
+		11DA32E720272DA600D95EC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11DA32C520272DA600D95EC7 /* GeoLocationTracking */;
+			targetProxy = 11DA32E620272DA600D95EC7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		11DA32CD20272DA600D95EC7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11DA32CE20272DA600D95EC7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		11DA32D220272DA600D95EC7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11DA32D320272DA600D95EC7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		11DA32EC20272DA600D95EC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		11DA32ED20272DA600D95EC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11DA32EF20272DA600D95EC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BLAG9TXR3M;
+				INFOPLIST_FILE = GeoLocationTracking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = takamii228.GeoLocationTracking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11DA32F020272DA600D95EC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BLAG9TXR3M;
+				INFOPLIST_FILE = GeoLocationTracking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = takamii228.GeoLocationTracking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		11DA32F220272DA600D95EC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BLAG9TXR3M;
+				INFOPLIST_FILE = GeoLocationTrackingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = takamii228.GeoLocationTrackingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoLocationTracking.app/GeoLocationTracking";
+			};
+			name = Debug;
+		};
+		11DA32F320272DA600D95EC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BLAG9TXR3M;
+				INFOPLIST_FILE = GeoLocationTrackingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = takamii228.GeoLocationTrackingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoLocationTracking.app/GeoLocationTracking";
+			};
+			name = Release;
+		};
+		11DA32F520272DA600D95EC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BLAG9TXR3M;
+				INFOPLIST_FILE = GeoLocationTrackingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = takamii228.GeoLocationTrackingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GeoLocationTracking;
+			};
+			name = Debug;
+		};
+		11DA32F620272DA600D95EC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BLAG9TXR3M;
+				INFOPLIST_FILE = GeoLocationTrackingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = takamii228.GeoLocationTrackingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GeoLocationTracking;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11DA32C120272DA600D95EC7 /* Build configuration list for PBXProject "GeoLocationTracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11DA32EC20272DA600D95EC7 /* Debug */,
+				11DA32ED20272DA600D95EC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11DA32EE20272DA600D95EC7 /* Build configuration list for PBXNativeTarget "GeoLocationTracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11DA32EF20272DA600D95EC7 /* Debug */,
+				11DA32F020272DA600D95EC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11DA32F120272DA600D95EC7 /* Build configuration list for PBXNativeTarget "GeoLocationTrackingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11DA32F220272DA600D95EC7 /* Debug */,
+				11DA32F320272DA600D95EC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11DA32F420272DA600D95EC7 /* Build configuration list for PBXNativeTarget "GeoLocationTrackingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11DA32F520272DA600D95EC7 /* Debug */,
+				11DA32F620272DA600D95EC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11DA32BE20272DA600D95EC7 /* Project object */;
+}
