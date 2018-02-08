@@ -14,6 +14,7 @@
 		11DA32D420272DA600D95EC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11DA32D220272DA600D95EC7 /* LaunchScreen.storyboard */; };
 		11DA32DF20272DA600D95EC7 /* GeoLocationTrackingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DA32DE20272DA600D95EC7 /* GeoLocationTrackingTests.swift */; };
 		11DA32EA20272DA600D95EC7 /* GeoLocationTrackingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DA32E920272DA600D95EC7 /* GeoLocationTrackingUITests.swift */; };
+		7C028DEFC776DA2675527B3B /* libPods-GeoLocationTracking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6E7A8E7A9918D1320A4E3B /* libPods-GeoLocationTracking.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,9 @@
 		11DA32E520272DA600D95EC7 /* GeoLocationTrackingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoLocationTrackingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11DA32E920272DA600D95EC7 /* GeoLocationTrackingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoLocationTrackingUITests.swift; sourceTree = "<group>"; };
 		11DA32EB20272DA600D95EC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B4F16983E904E8ADAAB9BB9 /* Pods-GeoLocationTracking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoLocationTracking.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeoLocationTracking/Pods-GeoLocationTracking.release.xcconfig"; sourceTree = "<group>"; };
+		6B6E7A8E7A9918D1320A4E3B /* libPods-GeoLocationTracking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GeoLocationTracking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF9B7C5844D375FD3FE93A73 /* Pods-GeoLocationTracking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoLocationTracking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoLocationTracking/Pods-GeoLocationTracking.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C028DEFC776DA2675527B3B /* libPods-GeoLocationTracking.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				11DA32DD20272DA600D95EC7 /* GeoLocationTrackingTests */,
 				11DA32E820272DA600D95EC7 /* GeoLocationTrackingUITests */,
 				11DA32C720272DA600D95EC7 /* Products */,
+				FA7C937D6B3DCD30EB0DCA9F /* Pods */,
+				6A0112473D834714AA048118 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			path = GeoLocationTrackingUITests;
 			sourceTree = "<group>";
 		};
+		6A0112473D834714AA048118 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B6E7A8E7A9918D1320A4E3B /* libPods-GeoLocationTracking.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA7C937D6B3DCD30EB0DCA9F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF9B7C5844D375FD3FE93A73 /* Pods-GeoLocationTracking.debug.xcconfig */,
+				6B4F16983E904E8ADAAB9BB9 /* Pods-GeoLocationTracking.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11DA32EE20272DA600D95EC7 /* Build configuration list for PBXNativeTarget "GeoLocationTracking" */;
 			buildPhases = (
+				AC8F3938CD6A7BF0A55CD9EB /* [CP] Check Pods Manifest.lock */,
 				11DA32C220272DA600D95EC7 /* Sources */,
 				11DA32C320272DA600D95EC7 /* Frameworks */,
 				11DA32C420272DA600D95EC7 /* Resources */,
+				415DE804EA2C3A0B5BE43C5E /* [CP] Embed Pods Frameworks */,
+				615DCF610A10F542F6921D19 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,6 +221,11 @@
 					11DA32C520272DA600D95EC7 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					11DA32D920272DA600D95EC7 = {
 						CreatedOnToolsVersion = 9.2;
@@ -253,6 +285,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		415DE804EA2C3A0B5BE43C5E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoLocationTracking/Pods-GeoLocationTracking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		615DCF610A10F542F6921D19 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GeoLocationTracking/Pods-GeoLocationTracking-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoLocationTracking/Pods-GeoLocationTracking-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC8F3938CD6A7BF0A55CD9EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeoLocationTracking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		11DA32C220272DA600D95EC7 /* Sources */ = {
@@ -424,6 +512,7 @@
 		};
 		11DA32EF20272DA600D95EC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF9B7C5844D375FD3FE93A73 /* Pods-GeoLocationTracking.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,6 +528,7 @@
 		};
 		11DA32F020272DA600D95EC7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B4F16983E904E8ADAAB9BB9 /* Pods-GeoLocationTracking.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
