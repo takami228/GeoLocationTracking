@@ -12,11 +12,10 @@ import GoogleMaps
 
 class ViewController: UIViewController {
     
-    @IBOutlet var latitudeLabel: UILabel!
-    @IBOutlet var longitudeLabel: UILabel!
     @IBOutlet var googleMap: GMSMapView!
     @IBOutlet var distanceLabel: UILabel!
     @IBOutlet var button: UIButton!
+    @IBOutlet var timerLabel: UILabel!
     
     var locationManager: CLLocationManager!
     var marker: GMSMarker!
@@ -24,6 +23,8 @@ class ViewController: UIViewController {
     var isTracking: Bool!
     var distance: Double!
     var preLocation: CLLocation!
+    var timer: Timer!
+    var startTime: Double!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +47,9 @@ class ViewController: UIViewController {
         
         distance = 0
         distanceLabel.text = String(self.distance.rounded()) + " m"
+        timerLabel.text = "0"
+        timer = Timer()
+        startTime = 0.0
         isTracking = false;
     }
 
@@ -53,15 +57,34 @@ class ViewController: UIViewController {
         if(isTracking){
             button.setTitle("開始", for: .normal)
             button.backgroundColor = UIColor.cyan
+
             isTracking = false
             distanceLabel.text = String(distance.rounded()) + " m"
+            
+            timer.invalidate()
         } else {
             button.setTitle("停止", for: .normal)
             button.backgroundColor = UIColor.magenta
+            
             isTracking = true
             distance = 0
             distanceLabel.text = String(distance.rounded()) + " m"
+
+            timerLabel.text = "0"
+            startTime = Date().timeIntervalSince1970
+            timer = Timer.scheduledTimer(timeInterval: 0.1,
+                                         target: self,
+                                         selector: #selector(ViewController.timerUpdate),
+                                         userInfo: nil,
+                                         repeats: true)
         }
+    }
+    
+    @objc func timerUpdate(){
+        let now = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "mm:ss.S"
+        timerLabel.text = formatter.string(from: (now - startTime))
     }
     
     override func didReceiveMemoryWarning() {
@@ -113,8 +136,6 @@ extension ViewController: CLLocationManagerDelegate, GMSMapViewDelegate {
                 distanceLabel.text = String(distance.rounded()) + " m"
             }
             preLocation = now
-            latitudeLabel.text = String(location.coordinate.latitude)
-            longitudeLabel.text = String(location.coordinate.longitude)
         }
     }
 }
