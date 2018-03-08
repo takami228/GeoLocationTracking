@@ -20,6 +20,9 @@ DerivedData
 Pods/*
 Podfile.lock
 
+# env
+env.properties
+
 # others
 *.swp
 !.gitkeep
