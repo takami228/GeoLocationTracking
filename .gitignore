@@ -15,10 +15,11 @@ DerivedData
 *.hmap
 *.ipa
 *.xcuserstate
+*.dSYM.zip
+*.dSYM
 
 # CocoaPod
 Pods/*
-Podfile.lock
 
 # env
 env.properties

@@ -29,6 +29,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        DGSLogv("%@", getVaList(["DG Start App"]))
+        
         locationManager = CLLocationManager()
         locationManager.activityType = .fitness
         locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
