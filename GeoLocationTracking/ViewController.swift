@@ -10,6 +10,10 @@ import UIKit
 import CoreLocation
 import GoogleMaps
 
+var recordDateArray: Array<String> = Array()
+var recordTimeArray: Array<String> = Array()
+var recordDistanceArray: Array<String> = Array()
+
 class ViewController: UIViewController {
     
     @IBOutlet var googleMap: GMSMapView!
@@ -25,7 +29,7 @@ class ViewController: UIViewController {
     var preLocation: CLLocation!
     var timer: Timer!
     var startTime: Double!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -53,6 +57,10 @@ class ViewController: UIViewController {
         timer = Timer()
         startTime = 0.0
         isTracking = false;
+        
+        recordDateArray.append("日時")
+        recordTimeArray.append("タイム")
+        recordDistanceArray.append("走行距離")
     }
 
     @IBAction func touchButton(_ sender: Any) {
@@ -68,6 +76,15 @@ class ViewController: UIViewController {
             button.setTitle("停止", for: .normal)
             button.backgroundColor = UIColor.magenta
             
+            //Record to Array
+            let formatter = DateFormatter()
+            formatter.dateFormat = "yyyy/MM/dd"
+            recordDateArray.append(formatter.string(from: Date()))
+            recordTimeArray.append(timerLabel.text!)
+            recordDistanceArray.append(distanceLabel.text!)
+            
+            print(recordDistanceArray.count)
+
             isTracking = true
             distance = 0
             distanceLabel.text = String(distance.rounded()) + " m"

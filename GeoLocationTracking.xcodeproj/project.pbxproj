@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1179C4F220BA6C040092B042 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1179C4F120BA6C040092B042 /* RecordViewController.swift */; };
+		1179C50120BA7B100092B042 /* diagnosis.png in Resources */ = {isa = PBXBuildFile; fileRef = 1179C4FF20BA7B100092B042 /* diagnosis.png */; };
+		1179C50220BA7B100092B042 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 1179C50020BA7B100092B042 /* home.png */; };
 		11DA32CA20272DA600D95EC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DA32C920272DA600D95EC7 /* AppDelegate.swift */; };
 		11DA32CC20272DA600D95EC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DA32CB20272DA600D95EC7 /* ViewController.swift */; };
 		11DA32CF20272DA600D95EC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11DA32CD20272DA600D95EC7 /* Main.storyboard */; };
@@ -36,6 +39,9 @@
 
 /* Begin PBXFileReference section */
 		117230E62051718900617FC6 /* GeoLocationTracking-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GeoLocationTracking-Bridging-Header.h"; sourceTree = "<group>"; };
+		1179C4F120BA6C040092B042 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		1179C4FF20BA7B100092B042 /* diagnosis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = diagnosis.png; path = ../../../../Desktop/diagnosis.png; sourceTree = "<group>"; };
+		1179C50020BA7B100092B042 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = ../../../../Desktop/home.png; sourceTree = "<group>"; };
 		11DA32C620272DA600D95EC7 /* GeoLocationTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoLocationTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11DA32C920272DA600D95EC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11DA32CB20272DA600D95EC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +111,8 @@
 		11DA32C820272DA600D95EC7 /* GeoLocationTracking */ = {
 			isa = PBXGroup;
 			children = (
+				1179C4FF20BA7B100092B042 /* diagnosis.png */,
+				1179C50020BA7B100092B042 /* home.png */,
 				11DA32C920272DA600D95EC7 /* AppDelegate.swift */,
 				11DA32CB20272DA600D95EC7 /* ViewController.swift */,
 				11DA32CD20272DA600D95EC7 /* Main.storyboard */,
@@ -112,6 +120,7 @@
 				11DA32D220272DA600D95EC7 /* LaunchScreen.storyboard */,
 				11DA32D520272DA600D95EC7 /* Info.plist */,
 				117230E62051718900617FC6 /* GeoLocationTracking-Bridging-Header.h */,
+				1179C4F120BA6C040092B042 /* RecordViewController.swift */,
 			);
 			path = GeoLocationTracking;
 			sourceTree = "<group>";
@@ -217,7 +226,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = takami228;
 				TargetAttributes = {
 					11DA32C520272DA600D95EC7 = {
@@ -268,6 +277,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				11DA32D420272DA600D95EC7 /* LaunchScreen.storyboard in Resources */,
+				1179C50220BA7B100092B042 /* home.png in Resources */,
+				1179C50120BA7B100092B042 /* diagnosis.png in Resources */,
 				11DA32D120272DA600D95EC7 /* Assets.xcassets in Resources */,
 				11DA32CF20272DA600D95EC7 /* Main.storyboard in Resources */,
 			);
@@ -354,6 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1179C4F220BA6C040092B042 /* RecordViewController.swift in Sources */,
 				11DA32CC20272DA600D95EC7 /* ViewController.swift in Sources */,
 				11DA32CA20272DA600D95EC7 /* AppDelegate.swift in Sources */,
 			);
@@ -424,6 +436,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -431,6 +444,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -458,7 +472,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -481,6 +495,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -488,6 +503,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -509,7 +525,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
